@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Python Quiz</title>
+    <style>
+        body {
+            position: relative;
+            text-align: center;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: rgba(39, 219, 245, 0.5);
+        }
+
+        footer {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            text-align: center;
+            margin-bottom: -5vw;
+            padding: 2vw;
+        }
+    </style>
+</head>
+<body>
+    <h1>Python Quiz</h1>
+    <p>Ciao! Benvenuto al test Python sull'intelligenza artificiale! <br>
+    Indica il tuo Nome, Cognome, E-mail e rispondi alle domande presenti nella pagina.</p>
+    <form id="test" method="POST" action="/res">
+        <!-- Question about the user's name -->
+        <h3>Come ti chiami?</h3>
+        <input type="text" name="username" required>
+        <h3>Indica un indirizzo e-mail</h3>
+        <input type="email" name="usermail" required>
+    <h2> Inizio del test</h2>
+        <!-- First question with multiple choice -->
+        <h3>Quali librerie Python sono comunemente utilizzate per la creazione di modelli di intelligenza artificiale?</h3>
+        <input type="radio" name="question1" value="r1"> NumPy<br>
+        <input type="radio" name="question1" value="r2"> TensorFlow<br>
+        <input type="radio" name="question1" value="r3"> Matplotlib<br>
+
+        <!-- Second question with multiple choice -->
+        <h3>Quali tipi di modelli di intelligenza artificiale possono essere implementati utilizzando Python?</h3>
+        <input type="radio" name="question2" value="r1"> Reti neurali artificiali<br>
+        <input type="radio" name="question2" value="r2"> Algoritmi genetici<br>
+        <input type="radio" name="question2" value="r3"> Linguaggio naturale<br>
+
+        <h3>Quale delle seguenti tecniche è utilizzata per ottimizzare i modelli di intelligenza artificiale in Python?</h3>
+        <input type="radio" name="question3" value="r1"> Gradiente discendente<br>
+        <input type="radio" name="question3" value="r2"> Dijkstra's Algorithm<br>
+        <input type="radio" name="question3" value="r3"> K-means Clustering<br>
+
+        <!-- Second question with multiple choice -->
+        <h3>Qual è uno degli ambienti di sviluppo integrato (IDE) popolari per lo sviluppo di modelli di intelligenza artificiale in Python?</h3>
+        <input type="radio" name="question4" value="r1"> Sublime Text<br>
+        <input type="radio" name="question4" value="r2"> Visual Studio Code<br>
+        <input type="radio" name="question4" value="r3"> Atom<br>
+
+        <h3>Qual è il ruolo di scikit-learn nel contesto dei modelli di intelligenza artificiale in Python?</h3>
+        <input type="radio" name="question5" value="r1"> Implementazione di algoritmi di machine learning<br>
+        <input type="radio" name="question5" value="r2"> Analisi statistica dei dati<br>
+        <input type="radio" name="question5" value="r3"> Creazione di interfacce utente grafiche<br>
+
+        <!-- Second question with multiple choice -->
+        <h3>Quali sono alcuni dei passaggi fondamentali per lo sviluppo di un modello di intelligenza artificiale in Python?</h3>
+        <input type="radio" name="question6" value="r1"> Raccolta dei dati, Preprocessing, Definizione del modello, Addestramento, Valutazione<br>
+        <input type="radio" name="question6" value="r2"> Scrittura del codice senza una metodologia specifica<br>
+        <input type="radio" name="question6" value="r3"> Utilizzo di modelli pre-addestrati senza alcuna personalizzazione<br>
+        <h2> Fine del test</h2>
+        <p> Grazie per aver partecipato! </p>
+        <br>
+
+        <input type="submit" value="Invia risposte">
+    </form>
+
+    <!-- Footer with information about the author -->
+    <footer>
+        Autore: Gabriele Petroni 
+    </footer>
+</body>
+</html>
